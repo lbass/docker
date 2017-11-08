@@ -57,7 +57,7 @@ app.use(function(request, response){
 	response.status(404).render("404");
 });
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 http.createServer(app).listen(PORT, function(){
-	console.log("Guestbook app started on port 3000.");
+	console.log("Guestbook app started on port "  + PORT);
 })

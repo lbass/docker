@@ -1,10 +1,11 @@
 {
   "name": "express-visitorsbook",
   "version": "1.0.0",
-  "description": "visitorbootk based express nod js",
-  "main": "index.js",
+  "description": "visitorbook based express nodejs",
+  "main": "app.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node app.js",
+    "test": "node app.js"
   },
   "keywords": [
     "node",
