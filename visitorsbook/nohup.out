@@ -1,0 +1,57 @@
+
+> express-visitorsbook@1.0.0 start /home/isheejong/docker/visitiorsbook
+> node app.js
+
+Guestbook app started on port 8080
+0
+undefined
+[0mGET / [36m304 [0m11.881 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m1.400 ms - -[0m
+0
+undefined
+[0mGET / [36m304 [0m1.750 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m0.363 ms - -[0m
+0
+undefined
+[0mGET / [36m304 [0m0.992 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m0.247 ms - -[0m
+0
+undefined
+[0mGET / [36m304 [0m1.137 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m0.266 ms - -[0m
+[0mGET /new-entry [32m200 [0m2.393 ms - 1772[0m
+[0mGET /ybrain.png [36m304 [0m0.242 ms - -[0m
+aaaa / aaaaa
+[0mPOST /new-entry [36m302 [0m20.617 ms - 46[0m
+1
+{ title: 'aaaa',
+  content: 'aaaaa',
+  published: 2017-11-22T08:44:31.241Z }
+aaaa
+[0mGET / [32m200 [0m2.309 ms - 1447[0m
+[0mGET /ybrain.png [36m304 [0m0.275 ms - -[0m
+[0mGET /new-entry [32m200 [0m1.223 ms - 1772[0m
+[0mGET /ybrain.png [36m304 [0m0.294 ms - -[0m
+안녕하세요.  / 이희종입니다. 반갑습니다.
+[0mPOST /new-entry [36m302 [0m1.097 ms - 46[0m
+2
+{ title: 'aaaa',
+  content: 'aaaaa',
+  published: 2017-11-22T08:44:31.241Z }
+aaaa
+[0mGET / [32m200 [0m1.408 ms - 1732[0m
+[0mGET /ybrain.png [36m304 [0m0.270 ms - -[0m
+2
+{ title: 'aaaa',
+  content: 'aaaaa',
+  published: 2017-11-22T08:44:31.241Z }
+aaaa
+[0mGET / [36m304 [0m1.158 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m0.245 ms - -[0m
+2
+{ title: 'aaaa',
+  content: 'aaaaa',
+  published: 2017-11-22T08:44:31.241Z }
+aaaa
+[0mGET / [36m304 [0m1.163 ms - -[0m
+[0mGET /ybrain.png [36m304 [0m0.265 ms - -[0m
