@@ -3,6 +3,20 @@ var path = require("path");
 var express = require("express");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
+var winston = require('winston');
+
+
+var logger = new (winston.Logger)({
+   transports: [
+       new (winston.transports.Console)(),
+       new (winston.transports.File)({
+          filename: 'somefile.log'
+      })
+   ]
+});
+
+
+
 
 
 var app = express();
@@ -16,8 +30,9 @@ app.set("view engine", "ejs");
 var entries = [];
 app.locals.entries = entries;
 
-// logging
-app.use(logger("dev"));
+logger.log('info', 'Hello distributed log files!');
+
+출처: http://mcpaint.tistory.com/198 [MC빼인트와 함께]
 
 // middleware chain
 app.use(bodyParser.urlencoded({extended: false}));
