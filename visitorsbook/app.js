@@ -30,17 +30,15 @@ app.set("view engine", "ejs");
 var entries = [];
 app.locals.entries = entries;
 
-logger.log('info', 'Hello distributed log files!');
 
-출처: http://mcpaint.tistory.com/198 [MC빼인트와 함께]
 
 // middleware chain
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static('public'));
 
 app.get("/", function(request, response){
-	console.log(entries.length);
-	console.log(entries[0]);
+
+  logger.log('info', 'hello request incoming !! ');
 	if( entries.length ){
 		console.log(entries[0].title);
 	}
@@ -54,6 +52,7 @@ app.get("/new-entry", function(request, response){
 
 app.post("/new-entry", function(request, response){
 	console.log(request.body.title + " / " + request.body.body);
+
 	if( !request.body.title || ! request.body.body){
 		response.status(400).send("Entries must have a title and a body.");
 		return;
